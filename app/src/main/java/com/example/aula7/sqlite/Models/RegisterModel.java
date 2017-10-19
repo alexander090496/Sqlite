@@ -5,8 +5,18 @@ package com.example.aula7.sqlite.Models;
  */
 
 public class RegisterModel {
-    private  String name;
-    private int telefono;
+    private int id;
+    private String name;
+    private String phone;
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -16,11 +26,12 @@ public class RegisterModel {
         this.name = name;
     }
 
-    public int getTelefono() {
-        return telefono;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 }
+
